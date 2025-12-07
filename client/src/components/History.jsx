@@ -18,7 +18,7 @@ function History() {
 
   const fetchHistory = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/analyze/history/${userId}`);
+      const res = await axios.get(`https://ai-med-diagnosis.onrender.com/api/analyze/history/${userId}`);
       setHistory(res.data);
     } catch (err) {
       console.error(err);
