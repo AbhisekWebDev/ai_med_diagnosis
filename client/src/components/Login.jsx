@@ -13,7 +13,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', formData);
+      const res = await axios.post('https://ai-med-diagnosis.onrender.com/api/auth/login', formData);
       
       // SAVE THE DATA (This fixes your previous error)
       localStorage.setItem('token', res.data.token);
