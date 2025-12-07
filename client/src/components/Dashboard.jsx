@@ -76,7 +76,7 @@ function Dashboard() {
     setLoading(true);
     try {
       const userId = localStorage.getItem('userId');
-      const res = await axios.post('http://localhost:5000/api/analyze', {
+      const res = await axios.post('https://ai-med-diagnosis.onrender.com/api/analyze', {
         userId, 
         symptoms 
       });
